@@ -30,7 +30,7 @@ export const ContactForm = ({
           onChange={(e) => setPhone(e.target.value)}
           required
           // regex is for US phone numbers
-          pattern="[1-9][0-9]{2}-[1-9][0-9]{2}-[0-9]{4}"
+          pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
           placeholder="Contact Phone (###-###-####)"
         />
       </label>
